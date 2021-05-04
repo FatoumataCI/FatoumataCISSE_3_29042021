@@ -18,33 +18,39 @@ img{
 
 /*header*/
 
-header{
+header a{
     display: flex;
+    justify-content: center;
 }
 
 .logo{
-    height: auto;
-    width: 150px;
-    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
 }
 
 /*partie1*/
 
 .searched{
     display: flex;
-    margin-left: auto;
     background: #d5dbdb;
-    border-radius: 20px;
-    padding: 10px;
+    height: 65px;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: inset 0px 5px 5px 0px #cbcaca;
+    margin-top: 15px;
 }
 
 .fas.fa-map-marker-alt {
     background-color: #d5dbdb;
+    font-size: 20px;
 }
 
 input{
     background-color: #d5dbdb;
     border: 0;
+    font-size: 20px;
 }
 
 .partie1{
@@ -54,10 +60,12 @@ input{
 
 .partie1 h1{
     font-size: 30px;
+    margin: 0;
 }
 
 .partie1 h2{
     font-family: 'roboto', sans-serif;
+    margin-left: 10px;
 }
 
 .partie1 button{
@@ -66,6 +74,7 @@ input{
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 20px;
+    color: white;
 }
 
 /*partie2*/
@@ -113,8 +122,6 @@ input{
 
 .partie3{
     background-color: #f2f2f2;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -127,8 +134,7 @@ input{
 
 .partie3 .cards{
     display: flex;
-    height: 254px;
-    width: 200px;
+    height: 234px;
     background: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 0 15px #c3c3c3;
@@ -140,17 +146,17 @@ input{
     border-radius: 10px 10px 0px 0px;
     flex-wrap: wrap;
     display: flex;
-    height: 100%;
+    height: 176px;
 }
 
 .partie3 .details{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 10px;
-    width: 100%;
-    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.partie3 h2{
+    margin-left: 10px;
 }
 
 .partie3 h3{
@@ -179,7 +185,7 @@ input{
     color: grey;
 }
 
-.partie3 .new{
+.partie3 button{
     display: flex;
     justify-content: end;
     border: 0;
@@ -209,4 +215,62 @@ input{
 .footer a{
     text-decoration: none;
     color: white;
+}
+
+@media all and (min-width: 320px) {
+
+/*header*/
+
+    .logo{
+    height: 30px;
+    margin-top: 10px;
+    }
+
+/*partie1*/
+
+    .partie1 h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .partie1 h2{
+        font-size: 19px;
+    }
+
+/*partie2*/
+
+    .partie2 .choix1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partie2 a{
+        margin: 10px;
+        height: 50px;
+    }
+
+    .partie2 h2{
+        margin-left: 10px;
+    }
+
+/*partie3*/
+
+    .partie3 .cards{
+        display: flex;
+        height: 263px;
+        flex-direction: column;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+/*footer*/
+
+    .footer{
+        text-align: left;
+    }
+
+    .logo1{
+        margin-left: 37px;
+    }
+
 }
