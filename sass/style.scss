@@ -1,0 +1,820 @@
+body{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    object-fit: cover;
+}
+
+/*header*/
+
+header a{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+/*partie1*/
+
+.searched{
+    display: flex;
+    background: #d5dbdb;
+    height: 65px;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: inset 0px 5px 5px 0px #cbcaca;
+    margin-top: 15px;
+}
+
+.fas.fa-map-marker-alt {
+    background-color: #d5dbdb;
+    font-size: 20px;
+}
+
+input{
+    background-color: #d5dbdb;
+    border: 0;
+    font-size: 20px;
+}
+
+.partie1{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.partie1 h1{
+    font-size: 30px;
+    margin: 0;
+}
+
+.partie1 h2{
+    font-family: 'roboto', sans-serif;
+    margin-left: 10px;
+}
+
+.partie1 button{
+    background: linear-gradient(#ff79da, #9356dc);
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*partie2*/
+
+.partie2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partie2 .choix1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.rond{
+    background: #9356dc;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.icon{
+    color: grey;
+    font-size: 20px;
+}
+
+.texte{
+    font-size: 20px;
+    color: black;
+}
+
+.partie2 a{
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+/*partie3*/
+
+.partie3{
+    background-color: #f2f2f2;
+    justify-content: space-between;
+}
+
+.partie3 a{
+    text-decoration: none;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-right: 100px;
+}
+
+.partie3 .cards{
+    display: flex;
+    height: 234px;
+    background: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 15px #c3c3c3;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.partie3 img{
+    border-radius: 10px 10px 0px 0px;
+    flex-wrap: wrap;
+    display: flex;
+    height: 176px;
+}
+
+.partie3 .details{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.partie3 h2{
+    margin-left: 10px;
+}
+
+.partie3 h3{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.partie3 p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-left: 0;
+    color: black;
+}
+
+.partie3 .coeur{
+    position: relative;
+    margin-right: 22px;
+    margin-top: 4px;
+}
+
+.partie3 .fas.fa-heart{
+    font-size: 20px;
+    color: grey;
+}
+
+.partie3 button{
+    display: flex;
+    justify-content: end;
+    border: 0;
+    background: #99e2d0;
+    color: #2c9c81;
+    padding: 3px 10px;
+    font-weight: bold;
+    height: 20px;
+    width: 70px;
+}
+
+/*footer*/
+
+.footer{
+    background: #333;
+    text-align: center;
+}
+
+.logo1{
+    filter: invert(1);
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media all and (min-width: 320px) {
+
+/*header*/
+
+    .logo{
+    height: 30px;
+    margin-top: 10px;
+    }
+
+/*partie1*/
+
+    .partie1 h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .partie1 h2{
+        font-size: 19px;
+    }
+
+/*partie2*/
+
+    .partie2 .choix1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partie2 a{
+        margin: 10px;
+        height: 50px;
+    }
+
+    .partie2 h2{
+        margin-left: 10px;
+    }
+
+/*partie3*/
+
+    .partie3 .cards{
+        display: flex;
+        height: 263px;
+        flex-direction: column;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+/*footer*/
+
+    .footer{
+        text-align: left;
+    }
+
+    .logo1{
+        margin-left: 37px;
+    }
+}
+
+/*tablette*/
+
+@media all and (min-width: 576px){ 
+
+/*header*/
+
+    header a{
+    
+    }
+
+    .logo{
+    
+    }
+
+/*partie1*/
+
+    .searched{
+    
+    }
+
+    .fas.fa-map-marker-alt {
+    
+    }
+
+    input{
+    
+    }
+
+    .partie1{
+    
+    }
+
+    .partie1 h1{
+    
+    }
+
+    .partie1 h2{
+    
+    }
+
+    .partie1 button{
+    
+    }
+
+/*partie2*/
+
+    .partie2{
+    
+    }
+
+    .partie2 .choix1{
+    
+    }
+
+    .rond{
+    
+    }
+
+    .icon{
+   
+    
+    }
+
+    .texte{
+    
+    }
+
+    .partie2 a{
+    
+    }
+
+/*partie3*/
+
+    .partie3{
+    
+    }
+
+    .partie3 a{
+    
+    }
+
+    .partie3 .cards{
+    
+    }
+
+    .partie3 img{
+    
+    }
+
+    .partie3 .details{
+    
+    }
+
+    .partie3 h2{
+    
+    }
+
+    .partie3 h3{
+    
+    }
+
+    .partie3 p{
+    
+    }
+
+    .partie3 .coeur{
+    
+    }
+
+    .partie3 .fas.fa-heart{
+    
+    }
+
+    .partie3 button{
+    
+    }
+
+/*footer*/
+
+    .footer{
+    
+    }
+
+    .logo1{
+    
+    }
+
+    .footer ul{
+    
+    }
+
+    .footer a{
+    
+    }
+}
+
+/*tablette*/
+
+@media all and (min-width: 768px){ 
+    
+/*header*/
+    
+    header a{
+    
+    }
+
+    .logo{
+    
+    }
+
+/*partie1*/
+
+    .searched{
+    
+    }
+
+    .fas.fa-map-marker-alt {
+    
+    }
+
+    input{
+    
+    }
+
+    .partie1{
+    
+    }
+
+    .partie1 h1{
+    
+    }
+
+    .partie1 h2{
+    
+    }
+
+    .partie1 button{
+    
+    }
+
+/*partie2*/
+
+    .partie2{
+    
+    }
+
+    .partie2 .choix1{
+    
+    }
+
+    .rond{
+    
+    }
+
+    .icon{
+   
+    
+    }
+
+    .texte{
+    
+    }
+
+    .partie2 a{
+    
+    }
+
+/*partie3*/
+
+    .partie3{
+    
+    }
+
+    .partie3 a{
+    
+    }
+
+    .partie3 .cards{
+    
+    }
+
+    .partie3 img{
+    
+    }
+
+    .partie3 .details{
+    
+    }
+
+    .partie3 h2{
+    
+    }
+
+    .partie3 h3{
+    
+    }
+
+    .partie3 p{
+    
+    }
+
+    .partie3 .coeur{
+    
+    }
+
+    .partie3 .fas.fa-heart{
+    
+    }
+
+    .partie3 button{
+    
+    }
+
+/*footer*/
+
+    .footer{
+    
+    }
+
+    .logo1{
+    
+    }
+
+    .footer ul{
+    
+    }
+
+    .footer a{
+    
+    }
+}
+
+/*ordi*/
+
+@media all and (min-width: 992px){ 
+
+/*header*/
+    header a{
+    
+    }
+
+    .logo{
+    
+    }
+
+/*partie1*/
+
+    .searched{
+    
+    }
+
+    .fas.fa-map-marker-alt {
+    
+    }
+
+    input{
+    
+    }
+
+    .partie1{
+    
+    }
+
+    .partie1 h1{
+    
+    }
+
+    .partie1 h2{
+    
+    }
+
+    .partie1 button{
+    
+    }
+
+/*partie2*/
+
+    .partie2{
+    
+    }
+
+    .partie2 .choix1{
+    
+    }
+
+    .rond{
+    
+    }
+
+    .icon{
+   
+    
+    }
+
+    .texte{
+    
+    }
+
+    .partie2 a{
+    
+    }
+
+/*partie3*/
+
+    .partie3{
+    
+    }
+
+    .partie3 a{
+    
+    }
+
+    .partie3 .cards{
+    
+    }
+
+    .partie3 img{
+    
+    }
+
+    .partie3 .details{
+    
+    }
+
+    .partie3 h2{
+    
+    }
+
+    .partie3 h3{
+    
+    }
+
+    .partie3 p{
+    
+    }
+
+    .partie3 .coeur{
+    
+    }
+
+    .partie3 .fas.fa-heart{
+    
+    }
+
+    .partie3 button{
+    
+    }
+
+/*footer*/
+
+    .footer{
+    
+    }
+
+    .logo1{
+    
+    }
+
+    .footer ul{
+    
+    }
+
+    .footer a{
+    
+    }
+
+}
+
+/*destkop*/
+
+@media all and (min-width: 1200px){ 
+
+/*header*/
+
+    header a{
+    
+    }
+
+    .logo{
+    
+    }
+
+/*partie1*/
+
+    .searched{
+    
+    }
+
+    .fas.fa-map-marker-alt {
+    
+    }
+
+    input{
+    
+    }
+
+    .partie1{
+    
+    }
+
+    .partie1 h1{
+    
+    }
+
+    .partie1 h2{
+    
+    }
+
+    .partie1 button{
+    
+    }
+
+/*partie2*/
+
+    .partie2{
+    
+    }
+
+    .partie2 .choix1{
+
+    }
+
+    .rond{
+    
+    }
+
+    .icon{
+   
+    
+    }
+
+    .texte{
+    
+    }
+
+    .partie2 a{
+    
+    }
+
+/*partie3*/
+
+    .partie3{
+    
+    }
+
+    .partie3 a{
+    
+    }
+
+    .partie3 .cards{
+    
+    }
+
+    .partie3 img{
+    
+    }
+
+    .partie3 .details{
+    
+    }
+
+    .partie3 h2{
+    
+    }
+
+    .partie3 h3{
+    
+    }
+
+    .partie3 p{
+    
+    }
+
+    .partie3 .coeur{
+    
+    }
+
+    .partie3 .fas.fa-heart{
+    
+    }
+
+    .partie3 button{
+    
+    }
+
+/*footer*/
+
+    .footer{
+    
+    }
+
+    .logo1{
+    
+    }
+
+    .footer ul{
+    
+    }
+
+    .footer a{
+    
+    }
+
+}
