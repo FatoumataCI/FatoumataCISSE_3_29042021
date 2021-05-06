@@ -1,0 +1,52 @@
+.reserve__btn-1{
+    background: linear-gradient(#ff79da, #9356dc);
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.section__button.fade-2{
+    background-color: #f2f2f2;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+    text-decoration: none;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+.fas.fa-store{
+    color: #9356dc;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section__title2{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.section__circle{
+    background: #9356dc;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.section__icons{
+    color: grey;
+    font-size: 20px;
+}
+
+.section__texte{
+    font-size: 20px;
+    color: black;
+}
