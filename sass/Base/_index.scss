@@ -1,12 +1,16 @@
-body{
-    margin: 0;
-    font-family: Roboto, sans-serif;
-}
+$fonts: Roboto, sans-serif;
+$primary-color:#9356DC;
+$primary-color:#FF79DA;
+$primary-color:#99E2D0;
+$primary-color: #f2f2f2;
+$primary-color: #d5dbdb;
+$primary-color: white;
+$primary-color:#99e2d0;
+$primary-color: #2c9c81;
 
-.container{
-    width: 100%;
-    max-width: 1350px;
-    margin: auto;
+body{
+    font-family: $fonts;
+    margin: 0;
 }
 
 *{
