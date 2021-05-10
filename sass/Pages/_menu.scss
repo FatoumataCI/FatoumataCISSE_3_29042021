@@ -1,0 +1,137 @@
+$fonts: Roboto, sans-serif;
+$primary-color: black;
+$fonts-size: 14px;
+
+body {
+    background-color: #fff;
+    color: $primary-color;
+    font-family: $fonts;
+    font-size: $fonts-size;
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    object-fit: cover;
+}
+
+*{
+    box-sizing: border-box ;
+}
+
+
+/*header*/
+
+.header__logo.menu__header__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding-top: 10px;
+}
+
+.header__back__icon {
+    position: absolute;
+    left: 25px;
+    color: #000;
+}
+
+.cover__img {
+    width: 100%;
+    margin: 0;
+}
+
+.imgr{
+    display: flex;
+    width: 100%;
+}
+
+/*menu*/
+
+.menuu{
+    background-color: #f2f2f2;
+}
+
+.menu__summary{
+    display: flex;
+    background-color: #f2f2f2;
+    position: relative;
+    border-radius: 35px 35px 0px 0px;
+    margin-top: -50px;
+    }
+        .menu__title{
+            margin-left: 15px;
+        }
+            .like.like-menu{
+                margin-top: 33px;
+                margin-left: 15px;
+            }
+
+.sub__title::after{
+                content: "";
+                border-bottom: 2px solid #99e2d0;
+                display: block;
+                padding-top: 3px;
+                width: 40px;
+            }
+                .menu__text{
+                    background-color: white;
+                    border-radius: 10px 10px 10px 10px;
+                }
+
+                .menu__plats{
+                    padding: 10px;
+                }
+
+                .menu__title__price{
+                    padding: 10px;
+                    margin-top: 10px;
+                    height: 30px;
+                }
+
+                .prod{
+                    margin: 0;
+                }
+
+                p{
+                    margin: 0;
+                }
+
+                .price__container{
+                    text-align: end;
+                }
+                
+                .checkbox {
+                    text-align: end;
+                }
+
+                .command-btn.fade-11 {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+
+                .btn-2 {
+                    width: 65%;
+                    display: inline-block;
+                }
+
+/*footer*/
+
+                footer{
+                    background: #333;
+                    text-align: left;
+                }
+
+                .footer__logo{
+                    filter: invert(1);
+                }
+                    .footer__link__value{
+                        list-style: none;
+                    }
+                        .footer a{
+                            text-decoration: none;
+                            color: white;
+                        }
+
+
