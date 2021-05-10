@@ -11,6 +11,10 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -460,11 +464,16 @@ footer {
 }
 footer .footer__logo {
   filter: invert(1);
+  padding-left: 17px;
 }
 footer .footer__link__value {
   list-style: none;
 }
-footer footer a {
+footer li {
+  margin: 5px;
+  margin-left: -23px;
+}
+footer .a {
   text-decoration: none;
   color: white;
 }
@@ -473,16 +482,13 @@ footer footer a {
   footer {
     background: #333;
     text-align: left;
+    padding-top: 10px;
   }
   footer .footer__logo {
     filter: invert(1);
   }
   footer .footer__link__value {
     list-style: none;
-  }
-  footer footer a {
-    text-decoration: none;
-    color: white;
   }
 }
 @media all and (min-width: 490px) {
@@ -495,10 +501,6 @@ footer footer a {
   }
   footer .footer__link__value {
     list-style: none;
-  }
-  footer footer a {
-    text-decoration: none;
-    color: white;
   }
 }
 @media all and (min-width: 760px) {
