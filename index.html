@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Oh my food</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/f7216a59cb.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/f7216a59cb.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container">
 
       <!--header-->
 
@@ -37,7 +27,7 @@
             <i class="fas fa-map-marker-alt location"></i>
           </div>
           <div class="input-field">
-            <input type="text" placeholder="Paris, Belleville" />
+            <input type="text" placeholder="Paris, Belleville"/>
           </div>
         </form>
       </header>
@@ -47,31 +37,30 @@
       <!--main-->
 
       <main>
-        <article class="reserve fade-1">
+        <article class="reserve">
           <hgroup class="reserve__hgroup">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception, selectionés par nos soins</h2>
           </hgroup>
-          <a href="" class="reserve__btn-1"> Explorer nos restaurants </a>
+          <button class="reserve__btn-1"> Explorer nos restaurants </button>
         </article>
 
         <section class="section">
           <h2 class="section__title">Fonctionnement</h2>
-          <div class="section__title2">
-            <a href="#" class="section__button fade-2">
+          <div class="section__contain">
+            <a href="#" class="section__button">
               <span class="section__circle">1</span>
-              <span class="section__icons"
-                ><i class="fas fa-mobile-alt"></i></span>
+              <span class="section__icons"><i class="fas fa-mobile-alt"></i></span>
               <span class="section__texte">Choisissez un restaurant</span>
             </a>
 
-            <a href="#" class="section__button fade-2">
+            <a href="#" class="section__button">
               <span class="section__circle">2</span>
               <span class="section__icons"><i class="fas fa-list"></i></span>
               <span class="section__texte">Composez un menu</span>
             </a>
 
-            <a href="#" class="section__button fade-2">
+            <a href="#" class="section__button">
               <span class="section__circle">3</span>
               <span class="section__icons"><i class="fas fa-store"></i></span>
               <span class="section__texte">Déguster au restaurant</span>
@@ -83,21 +72,21 @@
 
           <div class="store">
 
-            <h2 class="store__title fade-4">Restaurants</h2>
+            <h2 class="store__title">Restaurants</h2>
             <div class="card">
               <article class="store__card">
 
                 <a href="menu1.html">
 
-                  <figure class="store__img__header fade-5">
+                  <div class="store__img__header">
                     <img src="images/restaurants/1.jpg" alt="Photo La palette du goût" class="cart__img">
-                  </figure>
+                  </div>
 
-                  <figcaption class="img-btn-left">Nouveau</figcaption>
+                  <button class="img-btn-left">Nouveau</button>
                     <div class="details">
                       <h3 class="strong">La palette du goût</h3>
                       <p class="subtitle">Menilmontant</p>
-                      <i class="fas fa-heart"></i>
+                      <i class="far fa-heart"></i>
                     </div>
                 
                 </a>
@@ -107,15 +96,15 @@
 
                 <a href="menu2.html">
 
-                  <figure class="store__img__header fade-5">
+                  <div class="store__img__header">
                    <img src="images/restaurants/2.jpg" alt="Photo La note enchantée" class="cart__img">
-                  </figure>
+                  </div>
 
-                  <figcaption class="img-btn-left">Nouveau</figcaption>
+                  <button class="img-btn-left">Nouveau</button>
                     <div class="details">
                       <h3 class="strong">La note enchantée</h3>
                       <p class="subtitle">Charonne</p>
-                      <i class="fas fa-heart"></i>  
+                      <i class="far fa-heart"></i>  
                     </div>
 
                 </a>
@@ -125,13 +114,13 @@
 
                 <a href="menu3.html">
 
-                  <figure class="store__img__header fade-5">
+                  <div class="store__img__header">
                     <img src="images/restaurants/3.jpg" alt="A la francaise" class="cart__img">
-                  </figure>
+                  </div>
                     <div class="details">
                       <h3 class="strong">A la française</h3>
                       <p class="subtitle">Cité Rouge</p>
-                      <i class="fas fa-heart"></i>
+                      <i class="far fa-heart"></i>
                     </div>
 
                 </a>
@@ -141,13 +130,13 @@
 
                 <a href="menu4.html">
 
-                  <figure class="store__img__header fade-5">
+                  <div class="store__img__header">
                     <img src="images/restaurants/4.jpg" alt="Le délice des sens" class="cart__img">
-                  </figure>
+                  </div>
                   <div class="details">
                     <h3 class="strong">Le délice des sens</h3>
                     <p class="subtitle">Folie-Méricourt</p>
-                    <i class="fas fa-heart"></i>
+                    <i class="far fa-heart"></i>
                   </div>
 
                 </a>
@@ -164,7 +153,7 @@
 
       <footer>
 
-        <div class="footer fade-9">
+        <div class="footer">
           <div class="footer__logo">
             <img src="images/logo/ohmyfood@2x.svg" alt="Photo logo Oh my food">
           </div>
