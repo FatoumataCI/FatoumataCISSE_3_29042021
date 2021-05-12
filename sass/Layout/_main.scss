@@ -27,8 +27,6 @@
             margin: 0%;
         }
             .card {
-                display: flex;
-                flex-direction: column;
                 padding: 10px;
                 margin-bottom: 35px;
             }
@@ -92,17 +90,27 @@
         display: flex;
     }
 
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .cart__img {
-        width: 300px;
+        width: 364px;
     }
 
 }
 
-@media all and (min-width: 1099px){
+@media all and (min-width: 1056px){
 
  
 }
 
-@media all and (min-width: 1500px){
+@media all and (min-width: 1580px){
+
+    .cart__img {
+        width: 380px;
+    }
  
 }
