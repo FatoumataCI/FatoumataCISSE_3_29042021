@@ -62,19 +62,14 @@ a {
   text-decoration: none;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.section .section__contain {
+.section__contain {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
   flex-direction: column;
   padding: 15px;
 }
-.section .section__button {
+.section__contain .section__button {
   background-color: #f2f2f2;
   box-shadow: 0 5px 15px 0 #c3c3c3;
   text-decoration: none;
@@ -84,7 +79,7 @@ a {
   width: 100%;
   margin-bottom: 15px;
 }
-.section .section__circle {
+.section__contain .section__circle {
   background: #9356dc;
   border-radius: 25px;
   color: white;
@@ -92,13 +87,13 @@ a {
   font-weight: bold;
   margin-left: -20px;
 }
-.section .section__icons {
+.section__contain .section__icons {
   color: grey;
   font-size: 20px;
   padding: 5px;
 }
-.section .section__texte {
-  font-size: 20px;
+.section__contain .section__texte {
+  font-size: 15px;
   color: black;
   padding: 5px;
 }
@@ -127,11 +122,6 @@ a {
     margin-top: -197px;
     margin-left: 374px;
   }
-
-  .section__contain {
-    display: flex;
-    flex-direction: row;
-  }
 }
 @media all and (min-width: 768px) {
   .reserve__btn-1 {
@@ -141,10 +131,20 @@ a {
   .section__contain {
     display: flex;
     flex-direction: row;
+    padding: 0px;
+  }
+
+  .section__button {
+    margin: 12px;
   }
 
   .img-btn-left {
-    margin-left: 222px;
+    margin-left: 280px;
+  }
+}
+@media all and (min-width: 1580px) {
+  .img-btn-left {
+    margin-left: 300px;
   }
 }
 .reserve {
@@ -176,8 +176,6 @@ a {
   margin: 0%;
 }
 .store .card {
-  display: flex;
-  flex-direction: column;
   padding: 10px;
   margin-bottom: 35px;
 }
@@ -233,8 +231,19 @@ a {
     display: flex;
   }
 
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .cart__img {
-    width: 300px;
+    width: 364px;
+  }
+}
+@media all and (min-width: 1580px) {
+  .cart__img {
+    width: 380px;
   }
 }
 footer {
