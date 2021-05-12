@@ -13,13 +13,14 @@
         flex-direction: column;
         justify-content: center;
 
-        .section__title2{
+        .section__contain{
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
             flex-direction: column;
-            }
-                .section__button.fade-2{
+            padding: 15px;
+        }
+                .section__button{
                     background-color: #f2f2f2;
                     box-shadow: 0 5px 15px 0 #c3c3c3;
                     text-decoration: none;
@@ -35,14 +36,17 @@
                             color: white;
                             padding: 5px 10px;
                             font-weight: bold;
+                            margin-left: -20px;
                         }
                             .section__icons{
                                 color: grey;
                                 font-size: 20px;
+                                padding: 5px;
                             }
                                 .section__texte{
                                     font-size: 20px;
                                     color: black;
+                                    padding: 5px;
                                 }
     }
 
@@ -60,108 +64,49 @@
         font-weight: bold;
         width: 70px;
         position: absolute;
-        margin-top: -210px;
-        margin-left: 215px;
+        margin-top: -200px;
+        margin-left: 213px;
+        height: 27px;
     }
 
-@media all and (min-width: 320px){
-
-    .reserve__btn-1{
-        background: linear-gradient(#ff79da, #9356dc);
-        border: 0;
-        border-radius: 20px;
-        padding: 10px;
-        margin-bottom: 20px;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-            .section__title2{
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            flex-direction: column;
-        }
-                .section__button.fade-2{
-                    background-color: #f2f2f2;
-                    box-shadow: 0 5px 15px 0 #c3c3c3;
-                    text-decoration: none;
-                    height: 50px;
-                    border-radius: 10px 10px 10px 10px;
-                    padding: 10px;
-                    width: 100%;
-                    margin-bottom: 15px;
-                }
-                    .section__circle{
-                        background: #9356dc;
-                        border-radius: 25px;
-                        color: white;
-                        padding: 5px 10px;
-                        font-weight: bold;
-                    }
-                        .section__icons{
-                            color: grey;
-                            font-size: 20px;
-                        }
-                            .section__texte{
-                                font-size: 20px;
-                                color: black;
-                            }
-}
-
-    .fas.fa-store{
-        color: #9356dc;
-    }
-    
+@media all and (min-width: 480px){
+   
     .img-btn-left {
-        display: flex;
-        justify-content: center;
-        border: 0;
-        background: #99e2d0;
-        color: #2c9c81;
-        padding: 3px 10px;
-        font-weight: bold;
-        width: 70px;
-        position: absolute;
-        margin-top: -210px;
-        margin-left: 215px;
+        margin-top: -197px;
+        margin-left: 374px;
     }
+
+    .section__contain {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
-@media all and (min-width: 760px){
+@media all and (min-width: 768px){
     
-    .section__title2{
+    .reserve__btn-1 {
+        width: 270px;
+    }
+
+    .section__contain {
         display: flex;
-        flex-direction: initial;
-    
-            .section__button.fade-2 {
-                margin-left: 20px;
-                padding: 10px 5px;
-            }
-}
-    
+        flex-direction: row;
+    }
 
     .img-btn-left {
-        margin-left: 275px;
+        margin-left: 222px;
     }
+    
 }    
 
 @media all and (min-width: 1099px){
 
-    .img-btn-left {
-        margin-left: 440px;
-    }
+   
 }
 
 
 @media all and (min-width: 1500px){
 
-    .img-btn-left {
-        margin-left: 685px;
-    }
+   
 }
