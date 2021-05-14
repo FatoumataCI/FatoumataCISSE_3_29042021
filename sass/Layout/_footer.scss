@@ -5,32 +5,26 @@ footer{
             filter: invert(1);
             padding-left: 17px;
         }
-                .footer__link__value{
-                    list-style: none;
-                }
-                        li {
-                            margin: 5px;
-                            margin-left: -23px;
-                        }
-                                .a{
-                                    text-decoration: none;
-                                    color: white;
-                                }
+            .imgl {
+                margin-top: 10px;
+            }
+                    .footer__link__value{
+                        list-style: none;
+                    }
+                            li {
+                                margin: 5px;
+                                margin-left: -23px;
+                            }
+                                    .a{
+                                        text-decoration: none;
+                                        color: white;
+                                    }
 }
 
 @media all and (min-width: 480px){
 
     footer{
-        background: #333;
-        text-align: left;
-        padding-top: 10px;
-            .footer__logo{
-                filter: invert(1);
-                
-            }
-                .footer__link__value{
-                    list-style: none;
-                }     
+        text-align: center;
     }
 }
 
@@ -42,24 +36,17 @@ footer{
             .footer__logo{
                 filter: invert(1);
             }
-                .footer__link__value{
-                    list-style: none;
-                }
-        
+                    .footer__link__value{
+                        list-style: none;
+                    }
     }  
 }
 
-
 @media all and (min-width: 1099px){
-    footer {
-        text-align: center;
-    }
+    
 }
 
 @media all and (min-width: 1500px){
 
-    footer {
-        text-align: center;
-    }
 }
 
