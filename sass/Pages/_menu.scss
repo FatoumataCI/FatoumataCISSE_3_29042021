@@ -148,6 +148,22 @@ footer{
         margin-top: -128px;
         justify-content: space-evenly;
     }
+    
+    .menu__plats{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .command-btn{
+        display: contents;
+    }
+
+    .menu__text{
+        height: 75px;
+        width: 350px;
+    }
 
 }
         
@@ -169,7 +185,7 @@ footer{
 
     .menu__text{
         height: 70px;
-        width: 100%;
+        width: 336px;
     }
 }
         
