@@ -1,6 +1,6 @@
 
 .reserve{
-    background-color: #f2f2f2;
+    background-color: $primary-color;
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -10,13 +10,52 @@
             margin: 0;
             }
                 .reserve__hgroup h2{
-                    font-size: 17px;
+                    font-size: 16px;
                 }
     }
 
+.section__contain{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        flex-direction: column;
+        padding: 15px;
+        
+            .section__button{
+                background-color: $primary-color;
+                box-shadow: $box-shadow;
+                text-decoration: none;
+                height: 50px;
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+                    .section__circle{
+                        background: #9356dc;
+                        border-radius: 25px;
+                        color: white;
+                        padding: 5px 10px;
+                        font-weight: bold;
+                        margin-left: -20px;
+                    }
+                        .section__icons{
+                            color: grey;
+                            font-size: 20px;
+                            padding: 5px;
+                        }
+                            .fas.fa-store{
+                                color: #9356dc;
+                            }
+                            .section__texte{
+                                font-size: 15px;
+                                color: black;
+                                padding: 5px;
+                            }
+}
 .section__title {
     padding: 10px;
-}
+    }
 
 .store{
     background-color: #f2f2f2;
@@ -24,7 +63,7 @@
     flex-direction: column;
         .store__title {
             padding: 10px;
-            margin: 0%;
+            margin: 0;
         }
             .card {
                 padding: 10px;
@@ -33,21 +72,9 @@
                 .store a{
                     text-decoration: none;
                 }
-                    .store__img__header{
-                        display: flex;
-                        height: 210px;
-                        flex-direction: column;
-                        margin-left: 5px;
-                        margin-right: 5px;
-                        background: white;
-                        border-radius: 20px 20px 20px 20px;
-                        box-shadow: 0 0 15px #c3c3c3;    
-                        margin-top: 25px;
-                    }
+                    
                         .details{
-                            margin-left: 10px;
-                            margin-top: -59px;
-                            padding: 5px;
+                            padding: 10px;
                         }
                             .strong{
                                 text-decoration: none;
@@ -71,35 +98,45 @@
                                         color: black;
                                     }
 }
-    
- .cart__img{
-    border-radius: 10px 10px 0px 0px;
-    display: flex;
-    height: 150px;
+
+.store__card {
+    margin-top: 15px;
+    background: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: $box-shadow;
+
+        .cart__img{
+            border-radius: 10px 10px 0px 0px;
+            display: flex;
+            height: 150px;
+            width: 100%;
+        }
 }
- 
+    
 @media all and (min-width: 480px){
 
-        
 }
 
 @media all and (min-width: 768px){
 
-    .store__card {
-        
+    .section__contain {
         display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    .section__button {
+        margin: 12px;
     }
 
     .card {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+            .cart__img {
+                width: 364px;
+            }
     }
-
-    .cart__img {
-        width: 364px;
-    }
-
 }
 
 @media all and (min-width: 1056px){
