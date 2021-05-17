@@ -70,6 +70,7 @@ img{
 }
                     
 .sub__title::after{
+    content: '';
     border-bottom: 2px solid #99e2d0;
     display: block;
     padding-top: 3px;
@@ -90,6 +91,11 @@ img{
     margin-top: 10px;
     height: 30px;
 }
+
+.menu__details p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
                                     
 .prod{
     margin: 0;
@@ -105,7 +111,16 @@ p{
                                                 
 .checkbox{
     text-align: end;
-}                                     
+    position: relative;
+    background-color: #99e2d0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+}     
+
+.fas.fa-check-circle.btn-circle {
+    transform: rotate(-10deg);
+}
                                                 
 .command-btn{
     text-align: center;

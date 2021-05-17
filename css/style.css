@@ -62,6 +62,11 @@ a {
   text-decoration: none;
 }
 
+.reserve__btn-1 :hover {
+  transition: color 3s;
+  background-color: darken #ff79da, 1;
+}
+
 .img-btn-left {
   display: flex;
   justify-content: center;
@@ -188,13 +193,20 @@ a {
   color: black;
   margin: 0;
 }
+.store .heart {
+  position: relative;
+}
 .store .far.fa-heart {
-  font-size: 20px;
-  text-align: end;
-  display: block;
-  margin-right: 21px;
-  margin-top: -25px;
+  position: absolute;
+  right: 26px;
+  top: -27px;
   color: black;
+}
+.store .fas.fa-heart {
+  position: absolute;
+  right: 26px;
+  opacity: 0;
+  top: -27px;
 }
 
 .store__card {

@@ -89,15 +89,23 @@
                                     color: black;
                                     margin: 0;
                                 }
-                                    .far.fa-heart{
-                                        font-size: 20px;
-                                        text-align: end;
-                                        display: block;
-                                        margin-right: 21px;
-                                        margin-top: -25px;
-                                        color: black;
+                                    .heart {
+                                        position: relative;
                                     }
+                                        .far.fa-heart{
+                                            position: absolute;
+                                            right: 26px;
+                                            top: -27px;
+                                            color: black;
+                                        }
+                                            .fas.fa-heart {
+                                                position: absolute;
+                                                right: 26px;
+                                                opacity: 0;
+                                                top: -27px;
+                                            }
 }
+
 
 .store__card {
     margin-top: 15px;
