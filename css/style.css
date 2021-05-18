@@ -1,23 +1,152 @@
-body {
-  font-family: Roboto, sans-serif;
+.reserve {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+.reserve .reserve__hgroup h1 {
+  font-size: 25px;
+  font-weight: 600;
   margin: 0;
 }
-
-* {
-  box-sizing: border-box;
+.reserve .reserve__hgroup h2 {
+  font-size: 16px;
 }
 
-img {
-  object-fit: cover;
+.section__contain {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-direction: column;
+  padding: 15px;
+}
+.section__contain .section__button {
+  background-color: #f2f2f2;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
+  text-decoration: none;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.section__contain .section__circle {
+  background: #9356dc;
+  border-radius: 25px;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-left: -20px;
+}
+.section__contain .section__icons {
+  color: grey;
+  font-size: 20px;
+  padding: 5px;
+}
+.section__contain .fas.fa-store {
+  color: #9356dc;
+}
+.section__contain .section__texte {
+  font-size: 15px;
+  color: black;
+  padding: 5px;
 }
 
-a {
+.section__title {
+  padding: 10px;
+}
+
+.store {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+.store .store__title {
+  padding: 10px;
+  margin: 0;
+}
+.store .card {
+  padding: 10px;
+  margin-bottom: 35px;
+}
+.store .store a {
   text-decoration: none;
 }
-
-body {
-  background-color: #fff;
+.store .details {
+  padding: 10px;
+}
+.store .strong {
+  text-decoration: none;
   color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+.store .subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+.store .heart {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  top: -25px;
+}
+.store :hover.far.fa-heart {
+  position: absolute;
+  right: 26px;
+  top: -27px;
+  color: black;
+}
+.store :hover.fas.fa-heart {
+  position: absolute;
+  right: 26px;
+  opacity: 0;
+  top: -27px;
+}
+
+.store__card {
+  margin-top: 15px;
+  background: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+.store__card .cart__img {
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  height: 150px;
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .section__contain {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+  }
+
+  .section__button {
+    margin: 12px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card .cart__img {
+    width: 364px;
+  }
+}
+@media all and (min-width: 1580px) {
+  .cart__img {
+    width: 380px;
+  }
+}
+body {
+  color: #f2f2f2;
   font-family: Roboto, sans-serif;
   font-size: 14px;
   line-height: 1.5;
@@ -210,6 +339,24 @@ footer {
     width: 336px;
   }
 }
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -272,7 +419,7 @@ footer {
   font-weight: bold;
   width: 70px;
   position: absolute;
-  margin-top: -180px;
+  margin-top: -222px;
   margin-left: 215px;
   height: 27px;
 }
@@ -299,7 +446,7 @@ footer {
   }
 }
 .reserve {
-  background-color: black;
+  background-color: #f2f2f2;
   text-align: center;
   padding-bottom: 25px;
   padding-top: 25px;
@@ -321,7 +468,7 @@ footer {
   padding: 15px;
 }
 .section__contain .section__button {
-  background-color: black;
+  background-color: #f2f2f2;
   box-shadow: 0 5px 15px 0 #c3c3c3;
   text-decoration: none;
   height: 50px;
@@ -390,14 +537,17 @@ footer {
 }
 .store .heart {
   position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  top: -25px;
 }
-.store .far.fa-heart {
+.store :hover.far.fa-heart {
   position: absolute;
   right: 26px;
   top: -27px;
   color: black;
 }
-.store .fas.fa-heart {
+.store :hover.fas.fa-heart {
   position: absolute;
   right: 26px;
   opacity: 0;
