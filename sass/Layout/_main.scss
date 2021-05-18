@@ -93,17 +93,18 @@
                                         flex-direction: row-reverse;
                                         top: -25px;
                                     }
-                                        :hover.far.fa-heart{
+                                        .far.fa-heart{
                                             position: absolute;
                                             right: 26px;
                                             top: -27px;
                                             color: black;
                                         }
-                                            :hover.fas.fa-heart {
+                                            .fas.fa-heart {
                                                 position: absolute;
                                                 right: 26px;
                                                 opacity: 0;
                                                 top: -27px;
+                                                
                                             }
 }
 
