@@ -94,13 +94,13 @@
   flex-direction: row-reverse;
   top: -25px;
 }
-.store :hover.far.fa-heart {
+.store .far.fa-heart {
   position: absolute;
   right: 26px;
   top: -27px;
   color: black;
 }
-.store :hover.fas.fa-heart {
+.store .fas.fa-heart {
   position: absolute;
   right: 26px;
   opacity: 0;
@@ -419,8 +419,8 @@ a {
   font-weight: bold;
   width: 70px;
   position: absolute;
-  margin-top: -222px;
-  margin-left: 215px;
+  margin-top: -198px;
+  margin-left: 220px;
   height: 27px;
 }
 
@@ -431,10 +431,6 @@ a {
   }
 }
 @media all and (min-width: 768px) {
-  .reserve__btn-1 {
-    width: 270px;
-  }
-
   .img-btn-left {
     margin-top: -190px;
     margin-left: 280px;
@@ -541,13 +537,13 @@ a {
   flex-direction: row-reverse;
   top: -25px;
 }
-.store :hover.far.fa-heart {
+.store .far.fa-heart {
   position: absolute;
   right: 26px;
   top: -27px;
   color: black;
 }
-.store :hover.fas.fa-heart {
+.store .fas.fa-heart {
   position: absolute;
   right: 26px;
   opacity: 0;
