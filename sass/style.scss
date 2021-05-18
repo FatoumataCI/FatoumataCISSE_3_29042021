@@ -1,6 +1,7 @@
-@import "./Utils/mixins.scss";
 @import "./Utils/variables";
+@import "./Utils/mixins";
 @import "./Base/index";
+@import "./Pages/menu";
 @import "./Layout/header";
 @import "./Composants/buttons";
 @import "./Layout/main";
