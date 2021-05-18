@@ -1,6 +1,5 @@
-
 .reserve{
-    background-color: $primary-color;
+    background-color: #f2f2f2;
     text-align: center;
     padding-bottom: 25px;
     padding-top: 25px;
@@ -22,7 +21,7 @@
         padding: 15px;
         
             .section__button{
-                background-color: $primary-color;
+                background-color: #f2f2f2;
                 box-shadow: $box-shadow;
                 text-decoration: none;
                 height: 50px;
@@ -72,7 +71,6 @@
                 .store a{
                     text-decoration: none;
                 }
-                    
                         .details{
                             padding: 10px;
                         }
@@ -91,14 +89,17 @@
                                 }
                                     .heart {
                                         position: relative;
+                                        display: flex;
+                                        flex-direction: row-reverse;
+                                        top: -25px;
                                     }
-                                        .far.fa-heart{
+                                        :hover.far.fa-heart{
                                             position: absolute;
                                             right: 26px;
                                             top: -27px;
                                             color: black;
                                         }
-                                            .fas.fa-heart {
+                                            :hover.fas.fa-heart {
                                                 position: absolute;
                                                 right: 26px;
                                                 opacity: 0;
