@@ -35,6 +35,32 @@
                     }
 }
 
+/*header menu*/
+
+.header__logo.menu__header__logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding-top: 10px;
+}
+
+.header__back__icon{
+    position: absolute;
+    left: 25px;
+    color: #000;
+}
+
+.cover__img{
+    width: 100%;
+    margin: 0;
+}
+
+.imgr{
+    display: flex;
+    width: 100%;
+}
+
 @media all and (min-width: 480px){
   
 }
