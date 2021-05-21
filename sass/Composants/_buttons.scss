@@ -8,8 +8,12 @@
     text-decoration: none;
 }
 
+.reserve__btn-1{
+    transition: transform .5s;
+}
+
 .reserve__btn-1 :hover{
-    transition: color 3s;
+    transition: color .3s;
     background-color: darken ( #ff79da, 1);
 }
         
@@ -28,6 +32,16 @@
     height: 27px;
 }
 
+.command-btn{
+    text-align: center;
+}
+                                                        
+.btn-2{
+    width: 65%;
+    display: inline-block;
+    margin-top: 25px;
+}
+
 @media all and (min-width: 480px){
    
     .img-btn-left {
@@ -38,16 +52,21 @@
 
 @media all and (min-width: 768px){
     
-    
-
     .img-btn-left {
         margin-top: -190px;
         margin-left: 280px;
     }
+
+    .command-btn{
+        display: contents;
+    }
 }    
 
-@media all and (min-width: 1056px){
+@media all and (min-width: 1099px){
 
+    .command-btn{
+        display: contents;
+    }
 }
 
 @media all and (min-width: 1580px){
