@@ -18,6 +18,23 @@ a {
   text-decoration: none;
 }
 
+.section__contain .section__button:hover {
+  background-color: #c3c3c3;
+}
+
+.reserve__btn-1:hover {
+  background: #ff79da;
+  cursor: pointer;
+}
+
+.store .far.fa-heart:hover {
+  background: #ff79da;
+}
+
+.store .fas.fa-heart:hover {
+  background: #ff79da;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -112,9 +129,6 @@ a {
   width: 100%;
   margin-bottom: 15px;
 }
-.section__contain .section__button:hover {
-  color: red;
-}
 .section__contain .section__circle {
   background: #9356dc;
   border-radius: 25px;
@@ -175,20 +189,29 @@ a {
 .store .heart {
   position: relative;
 }
+.store .fa-heart {
+  transition: opacity 500ms;
+  padding-right: 32px;
+  color: transparent;
+  font-size: x-large;
+}
 .store .far.fa-heart {
   position: absolute;
-  right: 26px;
-  top: -27px;
+  right: 0px;
+  top: -30px;
   color: black;
 }
 .store .fas.fa-heart {
   position: absolute;
-  right: 26px;
-  opacity: 0;
-  top: -27px;
+  right: 0px;
+  top: -30px;
+  transition: opacity 500ms;
 }
 .store .fas.fa-heart:hover {
-  background: linear-gradient(#ff79da, #9356dc);
+  color: linear-gradient(#ff79da, #9356dc);
+}
+.store .far.fa-heart:hover {
+  color: linear-gradient(#ff79da, #9356dc);
 }
 
 .store__card {
@@ -196,6 +219,7 @@ a {
   background: white;
   border-radius: 20px 20px 20px 20px;
   box-shadow: 0 5px 15px 0 #c3c3c3;
+  position: relative;
 }
 .store__card .cart__img {
   border-radius: 10px 10px 0px 0px;
@@ -349,7 +373,7 @@ p {
 }
 
 .reserve__btn-1 :hover {
-  transition: color 0.3s;
+  transition: color 0.5s;
   background-color: darken #ff79da, 1;
 }
 
@@ -363,8 +387,8 @@ p {
   font-weight: bold;
   width: 70px;
   position: absolute;
-  margin-top: -198px;
-  margin-left: 220px;
+  top: 10px;
+  right: 10px;
   height: 27px;
 }
 
@@ -378,18 +402,7 @@ p {
   margin-top: 25px;
 }
 
-@media all and (min-width: 480px) {
-  .img-btn-left {
-    margin-top: -190px;
-    margin-left: 375px;
-  }
-}
 @media all and (min-width: 768px) {
-  .img-btn-left {
-    margin-top: -190px;
-    margin-left: 280px;
-  }
-
   .command-btn {
     display: contents;
   }
@@ -397,11 +410,6 @@ p {
 @media all and (min-width: 1099px) {
   .command-btn {
     display: contents;
-  }
-}
-@media all and (min-width: 1580px) {
-  .img-btn-left {
-    margin-left: 300px;
   }
 }
 footer {
