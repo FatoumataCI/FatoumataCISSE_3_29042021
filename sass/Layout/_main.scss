@@ -110,10 +110,12 @@
                                                 
                                             }
                                                 .fas.fa-heart:hover{
+                                                    background-clip: text;
                                                     color: linear-gradient(#ff79da, #9356dc);
                                                 }
 
                                                 .far.fa-heart:hover{
+                                                    background-clip: text;
                                                     color: linear-gradient(#ff79da, #9356dc);
                                                 }
 }
