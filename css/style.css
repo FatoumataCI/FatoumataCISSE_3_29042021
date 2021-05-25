@@ -208,9 +208,11 @@ a {
   transition: opacity 500ms;
 }
 .store .fas.fa-heart:hover {
+  background-clip: text;
   color: linear-gradient(#ff79da, #9356dc);
 }
 .store .far.fa-heart:hover {
+  background-clip: text;
   color: linear-gradient(#ff79da, #9356dc);
 }
 
