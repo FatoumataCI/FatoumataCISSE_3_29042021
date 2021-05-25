@@ -13,7 +13,7 @@
 }
 
 .reserve__btn-1 :hover{
-    transition: color .3s;
+    transition: color 0.5s;
     background-color: darken ( #ff79da, 1);
 }
         
@@ -27,8 +27,8 @@
     font-weight: bold;
     width: 70px;
     position: absolute;
-    margin-top: -198px;
-    margin-left: 220px;
+    top: 10px;
+    right: 10px;
     height: 27px;
 }
 
@@ -44,18 +44,12 @@
 
 @media all and (min-width: 480px){
    
-    .img-btn-left {
-        margin-top: -190px;
-        margin-left: 375px;
-    }
+    
 }
 
 @media all and (min-width: 768px){
     
-    .img-btn-left {
-        margin-top: -190px;
-        margin-left: 280px;
-    }
+    
 
     .command-btn{
         display: contents;
@@ -71,7 +65,5 @@
 
 @media all and (min-width: 1580px){
 
-    .img-btn-left {
-        margin-left: 300px;
-    }
+    
 }
