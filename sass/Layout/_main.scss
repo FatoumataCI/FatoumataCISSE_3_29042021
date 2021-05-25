@@ -29,9 +29,6 @@
                 padding: 10px;
                 width: 100%;
                 margin-bottom: 15px;
-                &:hover{
-                    color: red;
-                }
                 
             }
                     .section__circle{
@@ -93,21 +90,31 @@
                                     .heart {
                                         position: relative;
                                     }
-                                        .far.fa-heart{
-                                            position: absolute;
-                                            right: 26px;
-                                            top: -27px;
-                                            color: black;
-                                        }
+                                    .fa-heart {
+                                        transition: opacity 500ms;
+                                        padding-right: 32px;
+                                        color: transparent;
+                                        font-size: x-large;
+                                    }
+                                    .far.fa-heart{
+                                        position: absolute;
+                                        right: 0px;
+                                        top: -30px;
+                                        color: black;
+                                    }
                                             .fas.fa-heart{
                                                 position: absolute;
-                                                right: 26px;
-                                                opacity: 0;
-                                                top: -27px;
+                                                right: 0px;
+                                                top: -30px;
+                                                transition: opacity 500ms;
                                                 
                                             }
                                                 .fas.fa-heart:hover{
-                                                    background: linear-gradient(#ff79da, #9356dc);
+                                                    color: linear-gradient(#ff79da, #9356dc);
+                                                }
+
+                                                .far.fa-heart:hover{
+                                                    color: linear-gradient(#ff79da, #9356dc);
                                                 }
 }
 
@@ -117,6 +124,7 @@
     background: white;
     border-radius: 20px 20px 20px 20px;
     box-shadow: $box-shadow;
+    position: relative;
 
         .cart__img{
             border-radius: 10px 10px 0px 0px;
@@ -199,6 +207,7 @@ p{
     transform: rotate(-10deg);
 }
     
+
 @media all and (min-width: 480px){
 
 }
