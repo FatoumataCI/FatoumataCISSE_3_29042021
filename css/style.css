@@ -142,7 +142,7 @@ a {
   font-size: 20px;
   padding: 5px;
 }
-.section__contain .fas.fa-store {
+.section__contain .section__icons :hover {
   color: #9356dc;
 }
 .section__contain .section__texte {
@@ -288,19 +288,108 @@ p {
   text-align: end;
 }
 
+/*menu checkbox animation & keyframes*/
 .checkbox {
-  text-align: end;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  width: 30%;
   background-color: #99e2d0;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  overflow: hidden;
+  transition: transform 400ms ease-in;
+  transform: translateX(0em);
 }
 
+/* text-align: end;
+    position: relative;
+    background-color: #99e2d0;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden; */
 .fas.fa-check-circle.btn-circle {
   transform: rotate(-10deg);
+  color: white;
 }
 
+.checkbox:hover {
+  background-color: red;
+}
+
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+@keyframes checkbox {
+  0% {
+    transform: translate 50 px, 0;
+  }
+  40% {
+    transform: translate 25 px, 0;
+  }
+  70% {
+    transform: translate 12 px, 0;
+  }
+  100% {
+    transform: translate 1 px, 0;
+  }
+}
+/*menu animation page & keyframes*/
+.menu__text {
+  animation-name: anim;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.menu__text div:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.menu__text div:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.menu__text div:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform-origin: 50% bottom;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform-origin: 50% bottom;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% bottom;
+    transform: scale(1);
+  }
+}
 @media all and (min-width: 768px) {
   .section__contain {
     display: flex;
