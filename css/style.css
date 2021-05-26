@@ -1,5 +1,118 @@
 /*police site*/
 /*couleurs site*/
+/*menu animation page & keyframes*/
+.menu__text {
+  animation-name: anim;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.menu__text div:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.menu__text div:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.menu__text div:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform-origin: 50% bottom;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.8;
+    transform-origin: 50% bottom;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% bottom;
+    transform: scale(1);
+  }
+}
+/*checkbox*/
+.checkbox {
+  display: none;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.btn-circle {
+  font-size: 24px;
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.menu__text:hover .price__container {
+  animation: checkbox-contain ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  min-width: 50px;
+}
+
+.menu__text:hover .checkbox {
+  display: block;
+  flex: 0 0 15%;
+  background: #99e2d0;
+  max-width: 50px;
+  overflow: hidden;
+  animation: checkbox ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+.menu__text:hover .btn-circle {
+  position: absolute;
+  left: 27%;
+  top: 30%;
+  background: #99e2d0;
+  animation: validebtn ease 0.5s 1;
+}
+
+@keyframes checkbox {
+  0% {
+    transform: translate(50px, 0);
+  }
+  20% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 0);
+  }
+  60% {
+    transform: translate(15px, 0);
+  }
+  80% {
+    transform: translate(7px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
+@keyframes checkbox-contain {
+  0% {
+    transform: translate(50px, 0);
+  }
+  40% {
+    transform: translate(25px, 0);
+  }
+  70% {
+    transform: translate(12px, 0);
+  }
+  100% {
+    transform: translate(1px, 0);
+  }
+}
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -209,11 +322,11 @@ a {
 }
 .store .fas.fa-heart:hover {
   background-clip: text;
-  color: linear-gradient(#ff79da, #9356dc);
+  color: linear-gradient(#9356dc, #ff79da);
 }
 .store .far.fa-heart:hover {
   background-clip: text;
-  color: linear-gradient(#ff79da, #9356dc);
+  color: linear-gradient #9356dc, #ff79da;
 }
 
 .store__card {
@@ -258,6 +371,11 @@ a {
 .menuu .menu__text {
   background-color: white;
   border-radius: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 63px;
 }
 .menuu .menu__plats {
   padding: 10px;
@@ -286,107 +404,13 @@ p {
 
 .price__container {
   text-align: end;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding-right: 10px;
 }
 
-/*menu checkbox animation & keyframes*/
-.checkbox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 100%;
-  width: 30%;
-  background-color: #99e2d0;
-  transition: transform 400ms ease-in;
-  transform: translateX(0em);
-}
-
-/* text-align: end;
-    position: relative;
-    background-color: #99e2d0;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    overflow: hidden; */
-.fas.fa-check-circle.btn-circle {
-  transform: rotate(-10deg);
-  color: white;
-}
-
-.checkbox:hover {
-  background-color: red;
-}
-
-@keyframes checkbox {
-  0% {
-    transform: translate(50px, 0);
-  }
-  20% {
-    transform: translate(30px, 0);
-  }
-  40% {
-    transform: translate(20px, 0);
-  }
-  60% {
-    transform: translate(15px, 0);
-  }
-  80% {
-    transform: translate(7px, 0);
-  }
-  100% {
-    transform: translate(1px, 0);
-  }
-}
-@keyframes checkbox {
-  0% {
-    transform: translate 50 px, 0;
-  }
-  40% {
-    transform: translate 25 px, 0;
-  }
-  70% {
-    transform: translate 12 px, 0;
-  }
-  100% {
-    transform: translate 1 px, 0;
-  }
-}
-/*menu animation page & keyframes*/
-.menu__text {
-  animation-name: anim;
-  animation-duration: 6s;
-  animation-timing-function: ease;
-  animation-iteration-count: 1;
-}
-
-.menu__text div:nth-child(1) {
-  animation-delay: 2s;
-}
-
-.menu__text div:nth-child(2) {
-  animation-delay: 4s;
-}
-
-.menu__text div:nth-child(3) {
-  animation-delay: 6s;
-}
-
-@keyframes anim {
-  0% {
-    opacity: 0;
-    transform-origin: 50% bottom;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform-origin: 50% bottom;
-    transform: scaleY(1);
-  }
-  100% {
-    opacity: 1;
-    transform-origin: 50% bottom;
-    transform: scale(1);
-  }
-}
 @media all and (min-width: 768px) {
   .section__contain {
     display: flex;
