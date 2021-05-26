@@ -146,13 +146,18 @@
         position: relative;
         border-radius: 35px 35px 0px 0px;
         margin-top: -50px;
+        display: flex;
+        justify-content: space-between;
     }
         .menu__title{
             margin-left: 15px;
+            font-family: $logo-fonts;
+            font-size: 25px;
         }
             .like.like-menu{
-                margin-top: 33px;
-                margin-left: 15px;
+                top: 26px;
+                position: relative;
+                right: 15px;
             }               
                 .sub__title::after{
                     content: '';
@@ -180,20 +185,28 @@
                             .menu__title__price{
                                 padding: 10px;
                                 margin-top: 10px;
-                                height: 30px;
+                                
                             }
                                 .menu__details p{
                                     overflow: hidden;
                                     text-overflow: ellipsis;
+                                    font-size: 13px;
                                 }
 }
                                   
 .prod{
     margin: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 16px;
 }
                                         
 p{
     margin: 0;
+}
+
+.sub__title {
+    font-size: 17px;
 }
                                             
 .price__container{
