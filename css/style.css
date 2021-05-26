@@ -160,6 +160,7 @@ a {
 .header .header-image {
   height: 30px;
   margin-top: 10px;
+  font-family: "Shrikhand", cursive;
 }
 
 .search__location {
@@ -210,6 +211,11 @@ a {
   width: 100%;
 }
 
+@media all and (min-width: 480px) {
+  .imgr {
+    height: 270px;
+  }
+}
 .reserve {
   background-color: #f2f2f2;
   text-align: center;
@@ -353,13 +359,18 @@ a {
   position: relative;
   border-radius: 35px 35px 0px 0px;
   margin-top: -50px;
+  display: flex;
+  justify-content: space-between;
 }
 .menuu .menu__title {
   margin-left: 15px;
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
 }
 .menuu .like.like-menu {
-  margin-top: 33px;
-  margin-left: 15px;
+  top: 26px;
+  position: relative;
+  right: 15px;
 }
 .menuu .sub__title::after {
   content: "";
@@ -387,19 +398,26 @@ a {
 .menuu .menu__title__price {
   padding: 10px;
   margin-top: 10px;
-  height: 30px;
 }
 .menuu .menu__details p {
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 13px;
 }
 
 .prod {
   margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 p {
   margin: 0;
+}
+
+.sub__title {
+  font-size: 17px;
 }
 
 .price__container {
@@ -515,8 +533,72 @@ p {
 }
 
 @media all and (min-width: 768px) {
+  .btn-2 {
+    width: 55%;
+  }
+
   .command-btn {
     display: contents;
+  }
+}
+@media all and (min-width: 798px) {
+  .btn-2 {
+    width: 56%;
+  }
+}
+@media all and (min-width: 816px) {
+  .btn-2 {
+    width: 57%;
+  }
+}
+@media all and (min-width: 834px) {
+  .btn-2 {
+    width: 58%;
+  }
+}
+@media all and (min-width: 854px) {
+  .btn-2 {
+    width: 59%;
+  }
+}
+@media all and (min-width: 874px) {
+  .btn-2 {
+    width: 60%;
+  }
+}
+@media all and (min-width: 895px) {
+  .btn-2 {
+    width: 61%;
+  }
+}
+@media all and (min-width: 918px) {
+  .btn-2 {
+    width: 62%;
+  }
+}
+@media all and (min-width: 942px) {
+  .btn-2 {
+    width: 63%;
+  }
+}
+@media all and (min-width: 966px) {
+  .btn-2 {
+    width: 64%;
+  }
+}
+@media all and (min-width: 993px) {
+  .btn-2 {
+    width: 65%;
+  }
+}
+@media all and (min-width: 1020px) {
+  .btn-2 {
+    width: 66%;
+  }
+}
+@media all and (min-width: 1050px) {
+  .btn-2 {
+    width: 67%;
   }
 }
 @media all and (min-width: 1099px) {
@@ -533,6 +615,7 @@ footer .footer__logo {
   padding-left: 17px;
 }
 footer .imgl {
+  font-family: "Shrikhand", cursive;
   margin-top: 10px;
 }
 footer .footer__link__value {
