@@ -109,16 +109,17 @@
                                                 
                                             }
                                                 .fas.fa-heart:hover{
-                                                    background-clip: text;
-                                                    color: linear-gradient(#9356dc, #ff79da);
+                                                    -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                    background-color: linear-gradient(#9356dc, #ff79da);
                                                 }
 
                                                 .far.fa-heart:hover{
-                                                    background-clip: text;
-                                                    color: linear-gradient (#9356dc, #ff79da);
+                                                    -webkit-background-clip: text;
+                                                            background-clip: text;
+                                                    background-color: linear-gradient (#9356dc, #ff79da);
                                                 }
 }
-
 
 .store__card {
     margin-top: 15px;
@@ -177,10 +178,14 @@
                     }                         
                         .menu__plats{
                             padding: 10px;
-                            animation-name: menu;
-                            animation-duration: 5s;
-                            animation-iteration-count: infinite;
-                            animation: pop-up 1.8s;
+                            -webkit-animation-name: menu;
+                                    animation-name: menu;
+                            -webkit-animation-duration: 5s;
+                                    animation-duration: 5s;
+                            -webkit-animation-iteration-count: infinite;
+                                    animation-iteration-count: infinite;
+                            -webkit-animation: pop-up 1.8s;
+                                    animation: pop-up 1.8s;
                         }
                             .menu__title__price{
                                 padding: 10px;
@@ -280,7 +285,6 @@ p{
         height: 70px;
         width: 336px;
     }
- 
 }
 
 @media all and (min-width: 1580px){
