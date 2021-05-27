@@ -2,7 +2,8 @@ footer{
     background: #333;
     text-align: left;
         .footer__logo{
-            filter: invert(1);
+            -webkit-filter: invert(1);
+                    filter: invert(1);
             padding-left: 17px;
         }
             .imgl {
@@ -30,7 +31,8 @@ footer{
 }
 
 .footer__logo{
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
 }
     .footer__link__value{
         list-style: none;
@@ -55,7 +57,8 @@ footer{
         background: #333;
         text-align: center;
             .footer__logo{
-                filter: invert(1);
+                -webkit-filter: invert(1);
+                        filter: invert(1);
             }
                     .footer__link__value{
                         list-style: none;
