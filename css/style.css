@@ -181,6 +181,39 @@
     transform: translate(1px, 0);
   }
 }
+/*loader*/
+.loader {
+  height: 50px;
+  transform-origin: bottom center;
+  animation: rotate 3s linear infinite;
+}
+
+.circle {
+  display: inline-block;
+  background-color: purple;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: rond 1.5s linear infinite;
+  margin: -10px;
+}
+
+.circle:nth-child(2) {
+  background-color: palevioletred;
+  animation-delay: 0.75s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rond {
+  50% {
+    transform: scale(1);
+  }
+}
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -200,6 +233,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  margin: auto;
+}
+
 .section__contain .section__button:hover {
   background-color: #c3c3c3;
 }
@@ -210,11 +248,11 @@ a {
 }
 
 .store .far.fa-heart:hover {
-  background: #ff79da;
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .store .fas.fa-heart:hover {
-  background: #ff79da;
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .header {
