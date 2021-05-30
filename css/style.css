@@ -185,9 +185,9 @@
 .loader {
   display: flex;
   justify-content: center;
-  height: 80px;
   transform-origin: bottom center;
   animation: rotate 3.5s linear infinite;
+  position: relative;
 }
 
 .rond {
@@ -382,6 +382,7 @@ a {
   font-size: 15px;
   color: black;
   padding: 5px;
+  font-weight: bold;
 }
 
 .section__title {
@@ -395,7 +396,9 @@ a {
   padding: 10px;
 }
 .store .store__title {
-  margin: 0;
+  padding-top: 25px;
+  font-weight: bold;
+  margin: 0px;
 }
 .store .card {
   margin-bottom: 35px;
@@ -515,9 +518,8 @@ a {
   -webkit-animation: pop-up 1.8s;
   animation: pop-up 1.8s;
 }
-.menuu .menu__title__price {
+.menuu .menu__title__regroup {
   padding: 10px;
-  margin-top: 10px;
 }
 .menuu .menu__details p {
   overflow: hidden;
