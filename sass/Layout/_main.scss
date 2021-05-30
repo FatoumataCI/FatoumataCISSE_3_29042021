@@ -50,6 +50,7 @@
                                 font-size: 15px;
                                 color: black;
                                 padding: 5px;
+                                font-weight: bold;
                             }
 }
 .section__title {
@@ -62,7 +63,9 @@
     flex-direction: column;
     padding: 10px;
         .store__title {
-            margin: 0;
+            padding-top: 25px;
+            font-weight: bold;
+            margin: 0px;
         }
             .card {
                 margin-bottom: 35px;
@@ -187,10 +190,8 @@
                             -webkit-animation: pop-up 1.8s;
                                     animation: pop-up 1.8s;
                         }
-                            .menu__title__price{
+                            .menu__title__regroup{
                                 padding: 10px;
-                                margin-top: 10px;
-                                
                             }
                                 .menu__details p{
                                     overflow: hidden;
