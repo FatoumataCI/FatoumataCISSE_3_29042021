@@ -213,9 +213,9 @@
 .loader{
     display: flex;
     justify-content: center;
-    height: 80px;
     transform-origin: bottom center;
     animation: rotate 3.5s linear infinite;
+    position: relative;
 }
 
 .rond{
