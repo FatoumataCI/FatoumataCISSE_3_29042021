@@ -428,16 +428,6 @@ a {
   top: -30px;
   transition: opacity 500ms;
 }
-.store .fas.fa-heart:hover {
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-color: linear-gradient(#9356dc, #ff79da);
-}
-.store .far.fa-heart:hover {
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-color: linear-gradient #9356dc, #ff79da;
-}
 
 .store .far.fa-heart:hover {
   background: linear-gradient(#ff79da, #9356dc);
