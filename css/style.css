@@ -19,52 +19,32 @@
 }
 
 .menu__text div:nth-child(1) {
-  -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
 
 .menu__text div:nth-child(2) {
-  -webkit-animation-delay: 4s;
   animation-delay: 4s;
 }
 
 .menu__text div:nth-child(3) {
-  -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
 
-@-webkit-keyframes anim {
-  0% {
-    opacity: 0;
-    transform-origin: 50% bottom;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 0.8;
-    transform-origin: 50% bottom;
-    transform: scaleY(1);
-  }
-  100% {
-    opacity: 1;
-    transform-origin: 50% bottom;
-    transform: scale(1);
-  }
-}
 @keyframes anim {
   0% {
     opacity: 0;
-    transform-origin: 50% bottom;
-    transform: scale(0);
+    transform: scale(0.1);
+    transform-origin: 50%;
   }
-  50% {
-    opacity: 0.8;
-    transform-origin: 50% bottom;
-    transform: scaleY(1);
+  85% {
+    opacity: 1;
+    transform: scale(1.05);
+    transform-origin: 50%;
   }
   100% {
     opacity: 1;
-    transform-origin: 50% bottom;
     transform: scale(1);
+    transform-origin: 50%;
   }
 }
 /*checkbox*/
@@ -182,14 +162,35 @@
   }
 }
 /*loader*/
+.ldw {
+  background: white;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  visibility: visible;
+  animation: stop 3s ease forwards;
+}
+
+@keyframes stop {
+  90% {
+    opacity: 1;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -100;
+  }
+}
 .loader {
   display: flex;
   justify-content: center;
   transform-origin: bottom center;
   animation: rotate 3.5s linear infinite;
-  position: absolute;
+  position: fixed;
   top: 200px;
-  left: 30px;
+  width: 100%;
 }
 
 .rond {
@@ -244,23 +245,6 @@ a {
 .container {
   width: 100%;
   margin: 0;
-}
-
-.section__contain .section__button:hover {
-  background-color: #c3c3c3;
-}
-
-.reserve__btn-1:hover {
-  background: #ff79da;
-  cursor: pointer;
-}
-
-.store .far.fa-heart:hover {
-  background: linear-gradient(#ff79da, #9356dc);
-}
-
-.store .fas.fa-heart:hover {
-  background: linear-gradient(#ff79da, #9356dc);
 }
 
 .header {
@@ -380,7 +364,7 @@ a {
   color: #9356dc;
 }
 .section__contain .section__texte {
-  font-size: 15px;
+  font-size: 14px;
   color: black;
   padding: 5px;
   font-weight: bold;
@@ -455,6 +439,18 @@ a {
   background-color: linear-gradient #9356dc, #ff79da;
 }
 
+.store .far.fa-heart:hover {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.store .fas.fa-heart:hover {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .store__card {
   margin-top: 15px;
   background: white;
@@ -507,6 +503,7 @@ a {
   cursor: pointer;
   margin: 10px 0;
   height: 63px;
+  overflow: hidden;
 }
 .menuu .menu__plats {
   padding: 10px;
@@ -521,11 +518,15 @@ a {
 }
 .menuu .menu__title__regroup {
   padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menuu .menu__details p {
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 13px;
+  width: 80%;
 }
 
 .prod {
@@ -627,7 +628,6 @@ p {
 
 .reserve__btn-1 :hover {
   transition: color 0.5s;
-  background-color: darken #ff79da, 1;
 }
 
 .img-btn-left {
@@ -653,6 +653,15 @@ p {
   width: 65%;
   display: inline-block;
   margin-top: 25px;
+}
+
+.section__contain .section__button:hover {
+  background-color: #c3c3c3;
+}
+
+.reserve__btn-1:hover {
+  background: #ff79da;
+  cursor: pointer;
 }
 
 @media all and (min-width: 768px) {
