@@ -47,7 +47,7 @@
                                 color: #9356dc;
                             }
                             .section__texte{
-                                font-size: 15px;
+                                font-size: 14px;
                                 color: black;
                                 padding: 5px;
                                 font-weight: bold;
@@ -122,6 +122,19 @@
                                                             background-clip: text;
                                                     background-color: linear-gradient (#9356dc, #ff79da);
                                                 }
+
+}
+
+.store .far.fa-heart:hover{
+    background: linear-gradient(#ff79da,#9356dc);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.store .fas.fa-heart:hover{
+    background: linear-gradient(#ff79da,#9356dc);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .store__card {
@@ -178,6 +191,7 @@
                         cursor: pointer;
                         margin: 10px 0;
                         height: 63px;
+                        overflow: hidden;
                     }                         
                         .menu__plats{
                             padding: 10px;
@@ -192,11 +206,15 @@
                         }
                             .menu__title__regroup{
                                 padding: 10px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
                             }
                                 .menu__details p{
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     font-size: 13px;
+                                    width: 80%;
                                 }
 }
                                   
