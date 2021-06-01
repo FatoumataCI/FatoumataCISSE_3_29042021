@@ -14,7 +14,6 @@
 
 .reserve__btn-1 :hover{
     transition: color 0.5s;
-    background-color: darken ( #ff79da, 1);
 }
         
 .img-btn-left {
@@ -40,6 +39,15 @@
     width: 65%;
     display: inline-block;
     margin-top: 25px;
+}
+
+.section__contain .section__button:hover{
+    background-color:#c3c3c3;
+}
+
+.reserve__btn-1:hover{
+    background: #ff79da;
+    cursor: pointer;
 }
 
 @media all and (min-width: 480px){
