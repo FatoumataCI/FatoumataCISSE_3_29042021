@@ -11,7 +11,7 @@
                     font-size: 16px;
                     font-weight: 200;
                 }
-    }
+}
 
 .section__contain{
         display: flex;
@@ -53,6 +53,7 @@
                                 font-weight: bold;
                             }
 }
+
 .section__title {
     padding: 10px;
     font-size: 20px;
@@ -185,14 +186,10 @@
                     }                         
                         .menu__plats{
                             padding: 10px;
-                            -webkit-animation-name: menu;
-                                    animation-name: menu;
-                            -webkit-animation-duration: 5s;
-                                    animation-duration: 5s;
-                            -webkit-animation-iteration-count: infinite;
-                                    animation-iteration-count: infinite;
-                            -webkit-animation: pop-up 1.8s;
-                                    animation: pop-up 1.8s;
+                            animation-name: menu;
+                            animation-duration: 5s;
+                            animation-iteration-count: infinite;
+                            animation: pop-up 1.8s;
                         }
                             .menu__title__regroup{
                                 padding: 10px;
