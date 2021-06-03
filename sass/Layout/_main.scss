@@ -4,12 +4,12 @@
     padding-bottom: 25px;
     padding-top: 25px;
         .reserve__hgroup h1{
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 27px;
             margin: 0;
             }
                 .reserve__hgroup h2{
                     font-size: 16px;
+                    font-weight: 200;
                 }
     }
 
@@ -55,7 +55,8 @@
 }
 .section__title {
     padding: 10px;
-    }
+    font-size: 20px;
+}
 
 .store{
     background-color: #f2f2f2;
@@ -66,6 +67,7 @@
             padding-top: 25px;
             font-weight: bold;
             margin: 0px;
+            font-size: 20px;
         }
             .card {
                 margin-bottom: 35px;
@@ -79,13 +81,11 @@
                             .strong{
                                 text-decoration: none;
                                 color: black;
-                                font-weight: bold;
-                                font-size: 18px;
+                                font-size: 16px;
                                 margin: 0;
                             }
                                 .subtitle{
-                                    font-weight: 300;
-                                    font-size: 16px;
+                                    font-size: 15px;
                                     color: black;
                                     margin: 0;
                                 }
@@ -94,9 +94,9 @@
                                     }
                                     .fa-heart {
                                         transition: opacity 500ms;
-                                        padding-right: 32px;
+                                        padding-right: 10px;
                                         color: transparent;
-                                        font-size: x-large;
+                                        font-size: 20px;
                                     }
                                     .far.fa-heart{
                                         position: absolute;
@@ -221,6 +221,7 @@ p{
 
 .sub__title {
     font-size: 17px;
+    font-weight: 200;
 }
                                             
 .price__container{
