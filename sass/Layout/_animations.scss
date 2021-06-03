@@ -1,45 +1,72 @@
 
 /*menu animation page & keyframes*/
 
-  .menu__text{
-    -webkit-animation-name: anim;
-            animation-name: anim;
-    -webkit-animation-duration: 6s;
-            animation-duration: 6s;
-    -webkit-animation-timing-function: ease;
-            animation-timing-function: ease;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-play-state: running;
-            animation-play-state: running;
+.menu__text{
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    
 }
 
-.menu__text div:nth-child(1) { animation-delay: 2s }
-.menu__text div:nth-child(2) { animation-delay: 4s }
-.menu__text div:nth-child(3) { animation-delay: 6s }
-    
+.menu1 {
+    animation: anim 0.4s;
+}
+
+.menu2{
+
+    animation: anim 0.8s;
+}
+
+.menu3{
+
+    animation: anim 1.2s;
+}
+
+.menu4{
+
+    animation: anim 2s;
+}
+
+.menu5{
+
+    animation: anim 2.4s;
+}
+
+.menu6{
+
+    animation: anim 2.8s;
+}
+
+.menu7{
+
+    animation: anim 3.2s;
+}
+
+.menu8{
+
+    animation: anim 3.6s;
+}
+
+.menu9{
+
+    animation: anim 4s;
+}
 
 @keyframes anim{
+
     0% {
-        opacity: 0;
-        transform: scale(.1);
-        transform-origin: 50%;
-      }
-    
-      85% {
-        opacity: 1;
-        transform: scale(1.05);
-        transform-origin: 50%;
-      }
-      100% {
-        opacity: 1;  
+        transform: scale(0.1);
+        transform-origin: 50% bottom;
+    }
+    100% {
         transform: scale(1);
-        transform-origin: 50%;
-      }
+        transform-origin: 50% bottom;
+    }
+
 }
 
 /*checkbox*/
