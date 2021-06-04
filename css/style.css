@@ -290,7 +290,7 @@ a {
   padding-top: 25px;
 }
 .reserve .reserve__hgroup h1 {
-  font-size: 27px;
+  font-size: 21px;
   margin: 0;
 }
 .reserve .reserve__hgroup h2 {
@@ -400,13 +400,11 @@ a {
 .store .far.fa-heart:hover {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .store .fas.fa-heart:hover {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
-  background-clip: text;
 }
 
 .store__card {
