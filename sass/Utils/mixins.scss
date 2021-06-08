@@ -1,0 +1,7 @@
+@mixin border-radius ($radius) {
+    border-radius: $radius;
+}
+
+@mixin heading-shadow ($color) {
+   background: linear-gradient(#ff79da, #9356dc);
+}
