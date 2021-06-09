@@ -1,14 +1,19 @@
 .header{
     display: flex;
     flex-direction: column;
-    text-align: center;
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+    }
         header a{
             display: flex;
             justify-content: center;
             }
                 .header-image{
                     height: 30px;
-                    margin-top: 10px;
                     font-family: $logo-fonts;
                 }
 }
@@ -20,11 +25,10 @@
     justify-content: center;
     padding-top: 15px;
     box-shadow: inset 0px 5px 5px 0px #cbcaca;
-    margin-top: 15px;
         .search__icons{
             background-color: #d5dbdb;
             font-size: 20px;
-            padding-left: 35px;
+            padding-left: 75px;
             }
                 .input-field {
                     padding-left: 15px;

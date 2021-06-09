@@ -153,8 +153,7 @@
         background-color: #f2f2f2;
         position: relative;
         border-radius: 35px 35px 0px 0px;
-        margin-top: -50px;
-        display: flex;
+        margin-top: -20px;
         justify-content: space-between;
     }
         .menu__title{
@@ -251,14 +250,11 @@ p{
         flex-wrap: wrap;
         justify-content: space-around;
             .cart__img {
-                width: 364px;
+                width: 493px;
             }
     }
 
-    .menu__summary{
-        margin-top: -128px;
-        justify-content: space-evenly;
-    }
+    
     
     .menu__plats{
         display: flex;
@@ -275,9 +271,15 @@ p{
 
 @media all and (min-width: 1099px){
 
-    .menu__summary{
-        margin-top: -194px;
-    }
+    
+
+    .fas.fa-arrow-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 234px;
+    position: relative;
+}
     
     .menu__plats{
         display: flex;
