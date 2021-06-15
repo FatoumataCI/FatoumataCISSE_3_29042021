@@ -119,12 +119,13 @@
 .store .far.fa-heart:hover{
     background: linear-gradient(#ff79da,#9356dc);
     -webkit-background-clip: text;
+    background-clip: text;
    
 }
 
 .store .fas.fa-heart:hover{
     background: linear-gradient(#ff79da,#9356dc);
-    
+    background-clip: text;
     -webkit-background-clip: text;
 }
 
@@ -196,21 +197,20 @@
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
                             }
+                                .prod{
+                                    margin: 0;
+                                    margin-bottom: 5px;
+                                    font-weight: bold;
+                                    font-size: 16px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
                                 .menu__details p{
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     font-size: 13px;
                                     width: 80%;
                                 }
-}
-                                  
-.prod{
-    margin: 0;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
                                         
 p{
