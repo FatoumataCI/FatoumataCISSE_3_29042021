@@ -404,11 +404,13 @@ a {
 .store .far.fa-heart:hover {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .store .fas.fa-heart:hover {
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .store__card {
