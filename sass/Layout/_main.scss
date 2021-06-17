@@ -43,15 +43,17 @@
                             font-size: 20px;
                             padding: 5px; 
                         }
-                        .section__icons :hover{
-                                color: #9356dc;
-                            }
+                        
                             .section__texte{
                                 font-size: 14px;
                                 color: black;
                                 padding: 5px;
                                 font-weight: bold;
                             }
+}
+
+.fas.fa-store {
+    color: #9356dc;
 }
 
 .section__title {
@@ -119,14 +121,13 @@
 .store .far.fa-heart:hover{
     background: linear-gradient(#ff79da,#9356dc);
     -webkit-background-clip: text;
-    background-clip: text;
    
 }
 
 .store .fas.fa-heart:hover{
     background: linear-gradient(#ff79da,#9356dc);
     -webkit-background-clip: text;
-    background-clip: text;
+    
 }
 
 .store__card {
@@ -196,6 +197,7 @@
                                 overflow: hidden;
                                 text-overflow: ellipsis;
                                 white-space: nowrap;
+                                flex: 1;
                             }
                                 .prod{
                                     margin: 0;
@@ -209,7 +211,7 @@
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                     font-size: 13px;
-                                    width: 80%;
+                                    width: 100%;
                                 }
 }
                                         
@@ -229,6 +231,7 @@ p{
     font-size: 12px;
     font-weight: bold;
     padding-right: 10px;
+    padding-top: 20px;
 }
 
 @media all and (min-width: 480px){
